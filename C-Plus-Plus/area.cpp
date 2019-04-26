@@ -1,4 +1,4 @@
-/* Area of Box */
+/* Volume of Box */
 #include<iostream>
 using namespace std;
 class Box {
