@@ -21,8 +21,9 @@ inline int division(int a, int b)
 
 int main()
 {
-    int x = 10;
-    int y = 5;
+    int x,y;
+    cout << "Enter two numbers : " << endl;
+    cin >> x >> y;
     cout << "Addition = "<< addition(x,y) << endl;
     cout << "Subtraction = "<< subtraction(x,y) << endl;
     cout << "Multiplication = "<< multiplication(x,y) << endl;
