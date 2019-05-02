@@ -1,3 +1,5 @@
+/* Static Data Member */
+
 #include<iostream>
 using namespace std;
 
