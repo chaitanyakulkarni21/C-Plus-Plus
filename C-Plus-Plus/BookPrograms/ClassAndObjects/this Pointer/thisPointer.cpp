@@ -15,17 +15,16 @@ class pwr {
 		}
 };
 
-pwr :: pwr (double base, int exp)
+pwr :: pwr (double base, int exp)	// this keyword used
 {
-	b = base ;
-	e = exp;
-	val = 1;
+	this -> b = base;
+	this -> e = exp;
+	this -> val = 1;
 	
 	if(exp == 0)
 		return ;
-	
 	for(; exp>0 ; exp--)
-		val = val * b;
+		this->val = this->val * this -> b;
 }
 
 int main()
