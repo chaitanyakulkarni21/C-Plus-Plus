@@ -16,10 +16,10 @@ int main()
 
 double myfunc(double i)
 {
-	return i;
+	return i;					// 10 is returned
 }
 
 int myfunc(int i)
 {
-	return i;
+	return i;					// 5.4 is returned
 }
