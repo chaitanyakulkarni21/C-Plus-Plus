@@ -9,7 +9,7 @@ class loc{
     public:
         loc()   
         {
-
+            // empty constructor 
         }
         loc(int lg, int lt)
         {
@@ -23,7 +23,7 @@ class loc{
             cout << latitude << " " << endl;
         }
 
-        loc operator+(loc op2);
+        loc operator+(loc op2);     // + sign denotes the addtion opertion of objects 
 };
 
     // Operator + for loc
