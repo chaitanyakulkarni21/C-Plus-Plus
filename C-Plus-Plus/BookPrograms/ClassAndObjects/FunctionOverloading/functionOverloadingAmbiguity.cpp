@@ -8,8 +8,9 @@ double myfunc(double i);
 
 int main()
 {
-    cout << myfunc(10.1) << " ";        // unambiguous.... calls myfunc(double)
-    cout << myfunc(10);                 // ambiguous
+    cout << myfunc(10.1) << " "<< endl;        // unambiguous.... calls myfunc(double)
+    cout << myfunc(10.5) << endl;                 // ambiguous   if int passed.. computer confuses between float and 
+                                        //              double to typecaste into.
 
 
     return 0;
