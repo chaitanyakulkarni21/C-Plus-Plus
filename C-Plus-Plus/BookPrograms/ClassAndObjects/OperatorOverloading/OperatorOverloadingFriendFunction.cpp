@@ -16,6 +16,12 @@ class loc{
             latitude = lt;
         }
 
+        void updateValues(int lg,int lt)
+        {
+            longitude = lg;
+            latitude = lt;
+        }
+
         void show()
         {
             cout << longitude << " " << endl;
@@ -78,6 +84,23 @@ int main()
 
     ob1 = ob1 + ob2;
     ob1.show();     // displays sum of 10+30 and 20+30, thus 40 and 50 are printed
+
+    ob1.updateValues(2,4);
+    ob1 = ob1 - ob2;
+    ob1.show();
+
+    ob1.updateValues(3,4);
+    ob1 = ob2;
+    ob1.show();
+
+    ob1.updateValues(3,6);
+    ob1 = ++ob1;
+    ob1.show();
+
+    ob2.updateValues(4,5);
+    ob2 = ++ob2;
+    ob2.show();
+
 
     return 0;
 }
