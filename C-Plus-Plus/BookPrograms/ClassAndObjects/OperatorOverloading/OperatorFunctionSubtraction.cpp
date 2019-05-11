@@ -1,4 +1,4 @@
-/* Subtraction */
+/* Subtraction using creating a member function */
 
 #include<iostream>
 using namespace std;
