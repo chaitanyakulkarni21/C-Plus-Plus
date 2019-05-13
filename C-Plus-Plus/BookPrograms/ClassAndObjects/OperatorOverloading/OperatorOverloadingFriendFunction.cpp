@@ -32,6 +32,8 @@ class loc{
         loc operator - (loc op2);                    // not a friend, have access of only one variable
         loc operator = (loc op2);
         loc operator ++ ();
+
+        friend loc operator++(loc &op3, int x);    // friend function allowing post increment 
 };
 
 // Now, + is overloaded using friend function. Thus two parameters are passed
@@ -78,10 +80,19 @@ loc loc :: operator++()
     return *this;   
 }
 
+// Post Increment 
+
+// loc loc :: operator++ ()
+// {
+//     longitude++;
+//     latitude++;
+
+//     return *this;
+// }
+
 int main()
 {
     loc ob1(10,20),ob2(30,30);
-
     ob1 = ob1 + ob2;
     ob1.show();     // displays sum of 10+30 and 20+30, thus 40 and 50 are printed
 
@@ -101,6 +112,9 @@ int main()
     ob2 = ++ob2;
     ob2.show();
 
+    loc ob3(3,4);
+    ob3++;
+    ob3.show();
 
     return 0;
 }
