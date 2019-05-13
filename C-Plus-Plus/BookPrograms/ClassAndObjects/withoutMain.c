@@ -5,5 +5,5 @@
 int begin()
 
 {
-printf(” hello “);
+printf("Hello\n");
 }
