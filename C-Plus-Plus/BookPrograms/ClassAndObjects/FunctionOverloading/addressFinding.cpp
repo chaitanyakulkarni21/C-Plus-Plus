@@ -11,6 +11,7 @@ int main()
 	int (*fp)(int i, int j);	// pointer to f(int)
 	fp = myfunc;		// points to myfunc(int)
 	
+	
 	cout << fp(5,7);	// product of the two numbers is returned
 	
 	return 0;
